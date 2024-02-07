@@ -1,0 +1,50 @@
+---
+title: "Ex-T test"
+output:
+  pdf_document: default
+  html_document: default
+date: "2024-01-15"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+The study described in the question below is hypothetical testing based upon the paper Ojo, et al. (2007). 
+
+Up until approximately 2004, lead was used in gasoline additives in Nigeria. Suppose that we have data from a 2002 study conducted among non-smoking Nigerian women of child-bearing age who live in urban areas. The question is whether average blood lead level differs between women who predominantly work outdoors (e.g. street vendors, petrol station attendants, or traffic officers) versus those who work indoors (e.g. office workers, teachers). 102 women consented to be in the study and provided blood lead measurements, 73 of whom were classified as working outdoors and 29 of whom were classified as working indoors. 
+
+The average blood lead level of the 'outdoor group' was 6.22 ug/dL and the average blood lead level of the 'indoor group' was 4.28 ug/dL. The software output for the t-test is: t = 3.98, df = 87.1, p-value = 0.0001426.
+
+**Use the results above to answer the following questions.**
+
+
+## Question 1
+What is the difference in average blood lead levels between the outdoor group and the indoor group? Note: your answer should be a positive number.
+
+
+## Question 2
+What is the probability of observing a difference in average blood lead levels that is as extreme or more extreme than this observed difference under the null hypothesis of no mean difference? How do you calculate this probability in R using the the given information 
+
+
+## Question 3
+If the mean difference between the two groups were larger than what we observed, holding all else the same, would you expect the p-value to increase, decrease, or stay the same?
+
+## Question 4
+Is the validity of the t-test impacted at all if the distribution of blood lead measurements in one or both groups is highly skewed?  Note: 'skewness' here means that a disproportionate number of individuals have blood lead measurements that are much greater than the mean.
+
+
+## Question 5 (Choose your answer)
+Suppose that the data are, in fact, skewed as described above. One common technique for accommodating such skewness is to conduct a so-called 'log-transformation' of the data. So, for example, if a woman's blood lead level was 5 ug/dL, the transformed value would become log(5), or 0.699 log-ug/dL, and we would conduct a t-test on the log-transformed values. 
+**Why does taking a log-transformation of skewed data tend to yield a t-test with more valid inference?**
+
+a) Because log-transforming the data tends to yield symmetric distributions that better satisfy the normality assumption. 
+
+b) Because log-transforming the data is more likely to result in a statistically significant finding. 
+
+c) Because log-transforming the data will make the two groups farther apart. 
+
+
+
+
